@@ -40,6 +40,7 @@
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -68,9 +69,9 @@
         android:id="@+id/tvSelectedDateInMinutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
         android:textColor="#844046"
-        android:textSize="35sp"
-        android:layout_marginTop="20sp"/>
+        android:textSize="35sp" />
 
     <TextView
         android:layout_width="wrap_content"
