@@ -38,14 +38,8 @@ class MainActivity : AppCompatActivity() {
                 val currentDateInMinutes =
                     (simpleDateFormat.parse(simpleDateFormat.format(System.currentTimeMillis())))!!.time / 60000
 
-                // divide by 86400 to convert date into days
-                val selectedDateInDays =
-                    (simpleDateFormat.parse(selectedDate))!!.time / 86400000
-                val currentDateInDays =
-                    (simpleDateFormat.parse(simpleDateFormat.format(System.currentTimeMillis())))!!.time / 86400000
-
                 val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
-                val differenceInDays = currentDateInDays - selectedDateInDays
+                val differenceInDays = differenceInMinutes / (60 * 24)
 
                 tvSelectedDate.text = selectedDate
                 tvSelectedDateInMinutes.text = differenceInMinutes.toString()
